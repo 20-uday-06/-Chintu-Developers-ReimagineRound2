@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Logo from "@/app/logo4.png"
 import Button from "@/components/button";
+import VideoPlayer from '@/components/VideoPlayer';
 export default function Home() {
   return (
     <>
@@ -15,7 +16,8 @@ export default function Home() {
     </div>
     </div>
     <div id="main">
-      <div id="page1">
+      <div id="page1" style={{width: "100%", height: "100vh"}} >
+      <VideoPlayer />
       </div>
     </div>
     </>
