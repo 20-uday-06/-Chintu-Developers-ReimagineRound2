@@ -12,12 +12,13 @@ body {
 
 }
 
-.hide-scrollbar {
-  overflow: auto;
-  scrollbar-width: none; 
+body::-webkit-scrollbar {
+  display: block;
+  width: 8px;
+  background: black;
 }
+body::-webkit-scrollbar-thumb {
+  background-color: #fff;
 
-.hide-scrollbar::-webkit-scrollbar {
-  display: none; 
+  border-radius: 50px;
 }
-
