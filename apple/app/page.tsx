@@ -8,6 +8,7 @@ import Button from "@/components/button";
 import VideoPlayer from '@/components/VideoPlayer';
 import FlipWord from "@/components/FlipWord";
 import Scroll from '@/components/scroll';
+import Cscroll from '@/components/cardscroll';
 export default function Home() {
   return (
     <>
@@ -25,8 +26,11 @@ export default function Home() {
           <FlipWord />
           </div>
         </div>
-        <div id="page2" style={{ width: "100%", height: "100vh" }} >
+        <div id="page2" className="relative py-0 bottom-10px" style={{ width: "100%", height: "100vh" }} >
           <Scroll/>
+        </div>
+        <div id="page3" className="relative py-80" style={{ width: "100%", height: "100vh" }} >
+          <Cscroll/>
         </div>
       </div>
     </>
