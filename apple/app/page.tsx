@@ -7,6 +7,7 @@ import Logo from "@/app/logo4.png"
 import Button from "@/components/button";
 import VideoPlayer from '@/components/VideoPlayer';
 import FlipWord from "@/components/FlipWord";
+import Scroll from '@/components/scroll';
 export default function Home() {
   return (
     <>
@@ -23,6 +24,9 @@ export default function Home() {
             {/* <h1>Welcome to Apple</h1> */}
           <FlipWord />
           </div>
+        </div>
+        <div id="page2" style={{ width: "100%", height: "100vh" }} >
+          <Scroll/>
         </div>
       </div>
     </>
