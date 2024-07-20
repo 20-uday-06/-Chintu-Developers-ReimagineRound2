@@ -6,6 +6,7 @@ import Image from "next/image";
 import Logo from "@/app/logo4.png"
 import Button from "@/components/button";
 import VideoPlayer from '@/components/VideoPlayer';
+import FlipWord from "@/components/FlipWord";
 export default function Home() {
   return (
     <>
@@ -16,8 +17,12 @@ export default function Home() {
         </div>
       </div>
       <div id="main">
-        <div id="page1" style={{ width: "100%", height: "100vh" }} >
+        <div id="page1" style={{ width: "100%", height: "100vh", position:"relative" }} >
           <VideoPlayer />
+          <div className="text" style={{position: "absolute", top: "35%", left: "5%"}}>
+            {/* <h1>Welcome to Apple</h1> */}
+          <FlipWord />
+          </div>
         </div>
       </div>
     </>
