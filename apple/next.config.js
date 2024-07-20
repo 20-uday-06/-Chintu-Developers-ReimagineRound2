@@ -4,6 +4,7 @@ module.exports = {
     images: {
       domains: [
         'assets.aceternity.com',
+        'aceternity.com',
         'images.unsplash.com',
         'store.storeimages.cdn-apple.com' ,
         'quicktech.in' , 
