@@ -29,7 +29,7 @@ export const products = [
     title: "Mac mini",
     link: "https://editorially.org",
     thumbnail:
-      "https://www.apple.com/v/mac-mini/t/images/meta/mac-mini_overview__164prubpwpee_og.jpg",
+      "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/mac-mini-hero-202301_FMT_WHH?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1671503802341",
   },
   {
     title: "MacBook Air m2",
