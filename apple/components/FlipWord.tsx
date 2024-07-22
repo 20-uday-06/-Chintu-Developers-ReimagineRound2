@@ -10,7 +10,7 @@ export default function FlipWordsDemo() {
    <h1 className="text-8xl"> Welcome to <span style={{fontWeight: "bold"}}>Apple</span></h1>
         <FlipWords words={words}/>
 
-       <h3 className="text-3xl mt-6"> Explore our latest innovations, including the powerful new iPhone, the versatile iPad, and the high-performance MacBook.</h3>
+       <h3 className="text-3xl mt-6"> Explore our latest innovations, including the powerful new iPhone, the versatile iPad, and the high-performance MacBook. Explore Now...</h3>
      
       </div>
     </div>

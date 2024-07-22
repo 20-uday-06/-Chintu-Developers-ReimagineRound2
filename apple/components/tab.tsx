@@ -11,7 +11,7 @@ export default function TabsDemo() {
       content: (
         <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
           <p>Product Tab</p>
-          <DummyContent />
+          <DummyContent src="https://images.unsplash.com/photo-1502054195739-505158fe7855?q=80&w=1373&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
         </div>
       ),
     },
@@ -21,7 +21,7 @@ export default function TabsDemo() {
       content: (
         <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
           <p>Services tab</p>
-          <DummyContent />
+          <DummyContent src="https://www.apple.com/v/macbook-air/s/images/overview/design/color/design_top_midnight__fvf2p6124tqq_large.jpg"/>
         </div>
       ),
     },
@@ -31,7 +31,7 @@ export default function TabsDemo() {
       content: (
         <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
           <p>Playground tab</p>
-          <DummyContent />
+          <DummyContent src="https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg"/>
         </div>
       ),
     },
@@ -41,7 +41,7 @@ export default function TabsDemo() {
       content: (
         <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
           <p>Content tab</p>
-          <DummyContent />
+          <DummyContent src="https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg"/>
         </div>
       ),
     },
@@ -51,7 +51,7 @@ export default function TabsDemo() {
       content: (
         <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
           <p>Random tab</p>
-          <DummyContent />
+          <DummyContent src="https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg"/>
         </div>
       ),
     },
@@ -64,10 +64,10 @@ export default function TabsDemo() {
   );
 }
 
-const DummyContent = () => {
+const DummyContent = ({src}) => {
   return (
     <Image
-      src="/linear.webp"
+      src={src}
       alt="dummy image"
       width="1000"
       height="1000"

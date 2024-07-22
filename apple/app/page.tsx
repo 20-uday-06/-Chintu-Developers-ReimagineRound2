@@ -21,12 +21,11 @@ export default function Home() {
         </div>
       </div>
       <div id="main">
-        <div id="page1" style={{ width: "100%", position:"relative" }} >
+        <div id="page1" style={{ width: "100%", position:"relative"}} >
+          <div className="video" style={{height: "100%", width:"100%"}}>
           <VideoPlayer />
-          {/* <div className="box " style={{position: "absolute",borderRadius: "40px", zIndex: "0", top: "15%", left: "3%",width: "58vw", height: "70vh" , backgroundColor : "black" ,filter: "blur(10px)" ,opacity:"0.6" }}>
-            
-          </div> */}
-          <div className="text" style={{position: "absolute", top: "25%", left: "5%"}}>
+          </div>
+          <div className="text" style={{position: "absolute", top: "20%", left: "5%"}}>
           <FlipWord />
           </div>
         </div>
@@ -40,7 +39,7 @@ export default function Home() {
         <div id="page3" className="relative" style={{ width: "100%"}} >
           <Cscroll/>
         </div>
-        <div id="page4" className="relative py-80" style={{ width: "100%"}}>
+        <div id="page4" className="relative" style={{ width: "100%"}}>
           <Tabs/>
         </div>
       </div>
