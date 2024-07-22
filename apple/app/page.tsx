@@ -34,13 +34,13 @@ export default function Home() {
         
         <div id="page2" className="relative" style={{ width: "100%", marginTop: "4vw"}} >
           
-          <h1 className="text-white text-6xl text-center">Macbooks</h1>
-          <StickyScroller />
+          <h1 className="text-white text-6xl text-center">MacBook</h1>
+          <StickyScroller style={{ overflow: 'hidden', height: 'auto' }} /> 
         </div>
         <div id="page3" className="relative" style={{ width: "100%"}} >
           <Cscroll/>
         </div>
-        <div id="page4" className="relative py-80" style={{ width: "100%"}}>
+        <div id="page4" className="relative py-20" style={{ width: "100%"}}>
           <Tabs/>
         </div>
       </div>
