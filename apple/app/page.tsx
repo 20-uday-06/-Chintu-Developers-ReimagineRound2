@@ -26,7 +26,7 @@ export default function Home() {
           {/* <div className="box " style={{position: "absolute",borderRadius: "40px", zIndex: "0", top: "15%", left: "3%",width: "58vw", height: "70vh" , backgroundColor : "black" ,filter: "blur(10px)" ,opacity:"0.6" }}>
             
           </div> */}
-          <div className="text">
+          <div className="text" style={{position: "absolute", top: "25%", left: "5%"}}>
           <FlipWord />
           </div>
         </div>
@@ -37,10 +37,10 @@ export default function Home() {
           <h1 className="text-white text-6xl text-center">Macbooks</h1>
           <StickyScroller />
         </div>
-        <div id="page3" className="relative" style={{ width: "100%", height:"fit-content"}} >
+        <div id="page3" className="relative" style={{ width: "100%"}} >
           <Cscroll/>
         </div>
-        <div id="page4" className="relative py-80" style={{ width: "100%", height: "100vh" }}>
+        <div id="page4" className="relative py-80" style={{ width: "100%"}}>
           <Tabs/>
         </div>
       </div>
