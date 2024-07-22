@@ -21,6 +21,7 @@ module.exports = {
       'store-images.s-microsoft.com',
       'i.ytimg.com',
       'www.livemint.com',
+      'iplanet.one'
 
 
       ]
