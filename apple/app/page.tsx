@@ -9,6 +9,7 @@ import VideoPlayer from '@/components/VideoPlayer';
 import FlipWord from "@/components/FlipWord";
 import Scroll from '@/components/scroll';
 import Cscroll from '@/components/cardscroll';
+import Tabs from '@/components/tab';
 export default function Home() {
   return (
     <>
@@ -21,16 +22,24 @@ export default function Home() {
       <div id="main">
         <div id="page1" style={{ width: "100%", height: "100vh", position:"relative" }} >
           <VideoPlayer />
-          <div className="text" style={{position: "absolute", top: "35%", left: "5%"}}>
+          <div className="box " style={{position: "absolute",borderRadius: "40px", zIndex: "0", top: "22%", left: "3%",width: "58vw", height: "70vh" , backgroundColor : "black" ,filter: "blur(10px)" ,opacity:"0.6" }}>
+            
+          </div>
+          <div className="text" style={{position: "absolute", top: "40%", left: "5%",width: "86vw", height: "70vh"}}>
             {/* <h1>Welcome to Apple</h1> */}
           <FlipWord />
           </div>
         </div>
-        <div id="page2" className="relative py-0 bottom-10px" style={{ width: "100%", height: "100vh" }} >
+        
+        {/* <div id="page2" className="relative py-0 bottom-10px" style={{ width: "100%", height: "100vh" }} >
           <Scroll/>
-        </div>
+        </div> */}
         <div id="page3" className="relative py-80" style={{ width: "100%", height: "100vh" }} >
           <Cscroll/>
+        </div>
+        <div id="page4" className="relative py-80" style={{ width: "100%", height: "100vh" }}>
+
+          <Tabs/>
         </div>
       </div>
     </>

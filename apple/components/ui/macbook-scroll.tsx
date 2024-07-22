@@ -652,7 +652,7 @@ const AceternityLogo = () => {
       height="65"
       viewBox="0 0 66 65"
       fill="none"
-      xmlns="https://w7.pngwing.com/pngs/186/863/png-transparent-apple-logo-apple-logo-computer-wallpaper-silhouette.png"
+      xmlns="http://www.w3.org/2000/svg"
       className="h-3 w-3 text-white"
     >
       <path
