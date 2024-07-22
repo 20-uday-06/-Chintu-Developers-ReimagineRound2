@@ -41,10 +41,6 @@ export default function Home() {
           <Cscroll/>
         </div>
         <div id="page4" className="relative py-80" style={{ width: "100%", height: "100vh" }}>
-                {/* <div id="page2" className="relative py-0 bottom-10px" style={{ width: "100%", height: "100vh" }} >
-          <Scroll/>
-        </div> */}
-
           <Tabs/>
         </div>
       </div>
