@@ -37,8 +37,7 @@ export default function Home() {
         <div id="page3" className="relative py-80" style={{ width: "100%", height: "100vh" }} >
           <Cscroll/>
         </div>
-        <div id="page4" className="relative py-80" style={{ width: "100%", height: "100vh" }}>
-
+        <div id="page4" className="relative py-90vh" style={{ width: "100%", height: "100vh" }}>
           <Tabs/>
         </div>
       </div>
