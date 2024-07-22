@@ -5,9 +5,9 @@ import Image from "next/image";
 
 const content = [
   {
-    title: "Collaborative Editing",
+    title: "Magnificent 16-Inch Display",
     description:
-      "Work together in real time with your team, clients, and stakeholders. Collaborate on documents, share ideas, and make decisions quickly. With our platform, you can streamline your workflow and increase productivity.",
+      "Immerse yourself in stunning visuals with our 16-inch display, delivering vibrant colors and crystal-clear clarity. Perfect for all your viewing needs, this expansive screen enhances every detail, making it ideal for work, entertainment, and creative projects.",
     content: (
       <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
         Collaborative Editing
@@ -15,9 +15,9 @@ const content = [
     ),
   },
   {
-    title: "Real time changes",
+    title: "Blazing-Fast M3 Pro Chip",
     description:
-      "See changes as they happen. With our platform, you can track every modification in real time. No more confusion about the latest version of your project. Say goodbye to the chaos of version control and embrace the simplicity of real-time updates.",
+      "Experience unparalleled performance with the M3 Pro chip, designed to handle intensive tasks with ease. Its cutting-edge architecture delivers lightning-fast speeds and seamless multitasking, empowering you to tackle demanding projects effortlessly.",
     content: (
       <div className="h-full w-full  flex items-center justify-center text-white">
         <Image
@@ -31,9 +31,9 @@ const content = [
     ),
   },
   {
-    title: "Version control",
+    title: "18GB Unified Memory & 1TB SSD Storage",
     description:
-      "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
+      "Enjoy smooth multitasking and swift data access with 18GB of unified memory paired with a 1TB SSD. This combination ensures rapid performance and ample space for all your applications and files.",
     content: (
       <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white">
         Version control
@@ -41,9 +41,9 @@ const content = [
     ),
   },
   {
-    title: "Running out of content",
+    title: "All-Day Battery Life with 96W USB-C Power Adapter",
     description:
-      "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
+      "Stay powered throughout your day with a battery designed for long-lasting use. The 96W USB-C Power Adapter ensures quick, efficient charging, so you’re always ready to go.",
     content: (
       <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
         Running out of content

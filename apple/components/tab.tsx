@@ -2,76 +2,69 @@
 
 import Image from "next/image";
 import { Tabs } from "@/components/ui/tabs";
+import midnight from '@/public/Image/color/midnight.png'
+import silver from '@/public/Image/color/Silver.png'
+import space from '@/public/Image/color/Space grey.png'
+import starlight from '@/public/Image/color/starlight.png'
 
 export default function TabsDemo() {
   const tabs = [
     {
-      title: "Product",
+      title: "Midnight",
       value: "product",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
-          <p>Product Tab</p>
-          <DummyContent src="https://images.unsplash.com/photo-1502054195739-505158fe7855?q=80&w=1373&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-gray-900 to-slate-800">
+          <p>Midnight</p>
+          <DummyContent src={midnight} />
         </div>
       ),
     },
     {
-      title: "Services",
+      title: "Starlight",
       value: "services",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
-          <p>Services tab</p>
-          <DummyContent src="https://www.apple.com/v/macbook-air/s/images/overview/design/color/design_top_midnight__fvf2p6124tqq_large.jpg"/>
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-amber-300 to-amber-200">
+          <p>Starlight</p>
+          <DummyContent src={starlight} />
         </div>
       ),
     },
     {
-      title: "Playground",
+      title: "Space Grey",
       value: "playground",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
-          <p>Playground tab</p>
-          <DummyContent src="https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg"/>
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-neutral-800 to-neutral-100">
+          <p>Space Grey</p>
+          <DummyContent src={space} />
         </div>
       ),
-    },
-    {
-      title: "Content",
+    }, {
+      title: "Silver",
       value: "content",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
-          <p>Content tab</p>
-          <DummyContent src="https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg"/>
-        </div>
-      ),
-    },
-    {
-      title: "Random",
-      value: "random",
-      content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
-          <p>Random tab</p>
-          <DummyContent src="https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg"/>
+        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-zinc-500 to-zinc-500">
+          <p>Silver</p>
+          <DummyContent src={silver} />
         </div>
       ),
     },
   ];
 
   return (
-    <div className="h-[20rem] md:h-[40rem] [perspective:1000px] relative b flex flex-col max-w-5xl mx-auto w-full  items-start justify-start my-40">
+    <div className="h-[20rem] md:h-[40rem] [perspective:1000px] relative b flex flex-col max-w-5xl mx-auto w-full  items-start justify-start ">
       <Tabs tabs={tabs} />
     </div>
   );
 }
 
-const DummyContent = ({src}) => {
+const DummyContent = ({ src }) => {
   return (
     <Image
       src={src}
       alt="dummy image"
       width="1000"
       height="1000"
-      className="object-cover object-left-top h-[60%]  md:h-[90%] absolute -bottom-10 inset-x-0 w-[90%] rounded-xl mx-auto"
+      className="object-cover h-[60%]  md:h-[90%] absolute -bottom-10 inset-x-0 w-[90%] rounded-xl mx-auto"
     />
   );
 };

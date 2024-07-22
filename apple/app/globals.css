@@ -10,7 +10,7 @@ body {
   height: 100%;
 }
 
-/* body::-webkit-scrollbar {
+body::-webkit-scrollbar {
   display: block;
   width: 8px;
   background: black;
@@ -19,8 +19,8 @@ body {
 body::-webkit-scrollbar-thumb {
   background-color: #fff;
   border-radius: 10px;
-} */
-.no-visible-scrollbar {
+}
+/* .no-visible-scrollbar {
   scrollbar-width: none;
   -ms-overflow-style: none;
   -webkit-overflow-scrolling: touch;
@@ -28,4 +28,9 @@ body::-webkit-scrollbar-thumb {
 
 .no-visible-scrollbar::-webkit-scrollbar {
   display: none;
+} */
+/* Apply this CSS to remove scrolling from StickyScroller */
+.sticky-scroller {
+  overflow: hidden; /* Disable scrolling */
+  position: relative; /* Ensure it doesn't affect other layout aspects */
 }
