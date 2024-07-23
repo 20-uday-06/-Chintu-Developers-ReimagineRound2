@@ -23,6 +23,9 @@ module.exports = {
       "www.livemint.com",
       "iplanet.one",
       "letsenhance.io",
+      "images.macrumors.com",
+      "9to5mac.com",
+      "static5.depositphotos.com",
     ],
   },
 };

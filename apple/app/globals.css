@@ -30,6 +30,15 @@ body::-webkit-scrollbar-thumb {
   display: none;
 } */
 /* Apply this CSS to remove scrolling from StickyScroller */
+.scroll-hatao {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.scroll-hatao::-webkit-scrollbar {
+  display: none;
+}
 .sticky-scroller {
   overflow: hidden; /* Disable scrolling */
   position: relative; /* Ensure it doesn't affect other layout aspects */

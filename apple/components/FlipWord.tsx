@@ -2,7 +2,7 @@ import React from "react";
 import { FlipWords } from "@/components/ui/flip-words";
 // import 'bootstrap/dist/css/bootstrap.min.css';
 export default function FlipWordsDemo() {
-  const words = ["Innovate", "Inspire", "Connect", "Unique"];
+  const words = ["Innovative", "Inspiring", "Connecting", "Influencing"];
 
   return (
     <div className="h-[14rem] flex justify-center items-center px-0  w-[65%]">
