@@ -43,37 +43,62 @@ body::-webkit-scrollbar-thumb {
   overflow: hidden; /* Disable scrolling */
   position: relative; /* Ensure it doesn't affect other layout aspects */
 }
-
-.flex-container {
+#page5{
+  padding-top: 10%;
   display: flex;
-  width: 96%;
-  height: 100vh; /* Adjust height as needed */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.flex-container {
+  /* margin-top: 5vh; */
+  height: 100%;
+  display: flex;
+  width: 92%;
+  position: relative;
+  /* justify-content: center; */
+  /* height: 100vh; */
+  overflow: hidden;
+  gap: 15px;
 }
 
 .left-container {
   width: 60%;
+  overflow: hidden;
+  border-radius: 3%;
 }
 
 .right-container {
   width: 40%;
   display: flex;
   flex-direction: column;
-  position: relative;
-  left: 20%;
+  /* position: relative; */
+  gap: 15px;
+  overflow: hidden;
+
 }
 
 .right-container > * {
   flex: 1;
 }
 .watch {
+  overflow: hidden;
+  border-radius: 5%;
   width: 100%;
-  height: 40%;
-  display: flex;
-  flex-direction: column;
+  height: 100%;
+  /* display: flex;
+  flex-direction: column; */
+  /* position: relative; */
+  /* top: 1.4%; */
 }
 .ipad {
+  border-radius: 5%;
+  overflow: hidden;
   width: 100%;
-  height: 30%;
-  display: flex;
-  flex-direction: column;
+  height: 100%;
+  /* display: flex;
+  flex-direction: column; */
+}
+.Macvid{
+  border-radius: 5%;
 }

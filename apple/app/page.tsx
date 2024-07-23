@@ -48,7 +48,9 @@ export default function Home() {
         <div id="page5" className="relative" style={{ width: "100%" }}>
           <div className="flex-container">
             <div className="left-container">
+              <div className="Macvid">
               <Macvid />
+              </div>
             </div>
             <div className="right-container">
               <div className="ipad">
