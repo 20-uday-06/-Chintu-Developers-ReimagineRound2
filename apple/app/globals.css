@@ -43,3 +43,37 @@ body::-webkit-scrollbar-thumb {
   overflow: hidden; /* Disable scrolling */
   position: relative; /* Ensure it doesn't affect other layout aspects */
 }
+
+.flex-container {
+  display: flex;
+  width: 96%;
+  height: 100vh; /* Adjust height as needed */
+}
+
+.left-container {
+  width: 60%;
+}
+
+.right-container {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 20%;
+}
+
+.right-container > * {
+  flex: 1;
+}
+.watch {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+}
+.ipad {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+}

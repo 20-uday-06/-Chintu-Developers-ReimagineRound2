@@ -11,6 +11,9 @@ import Scroll from '@/components/scroll';
 import Cscroll from '@/components/cardscroll';
 import StickyScroller from "@/components/StickyScroller";
 import Tabs from '@/components/tab';
+import Ipadvid from '@/components/ipadvid';
+import Macvid from '@/components/macvid';
+import Watchvid from '@/components/watchvid';
 export default function Home() {
   return (
     <>
@@ -21,28 +24,42 @@ export default function Home() {
         </div>
       </div>
       <div id="main">
-        <div id="page1" style={{ width: "100%", position:"relative" }} >
+        <div id="page1" style={{ width: "100%", position: "relative" }} >
           <VideoPlayer />
           {/* <div className="box " style={{position: "absolute",borderRadius: "40px", zIndex: "0", top: "15%", left: "3%",width: "58vw", height: "70vh" , backgroundColor : "black" ,filter: "blur(10px)" ,opacity:"0.6" }}>
             
           </div> */}
-          <div className="text" style={{position: "absolute", top: "25%", left: "5%"}}>
-          <FlipWord />
+          <div className="text" style={{ position: "absolute", top: "25%", left: "5%" }}>
+            <FlipWord />
           </div>
         </div>
+        <div id="page3" className="relative" style={{ width: "100%" }} >
+          <Cscroll />
+        </div>
+        <div id="page2" className="relative pt-[3vw]" style={{ width: "100%", marginTop: "4vw" }} >
 
-        <div id="page3" className="relative" style={{ width: "100%"}} >
-          <Cscroll/>
-        </div>
-        <div id="page2" className="relative pt-[3vw]" style={{ width: "100%", marginTop: "4vw"}} >
-          
           <h1 className="text-white text-8xl text-left pl-[70px] font-bold">New to Mac?</h1>
-          <StickyScroller style={{ overflow: 'hidden', height: 'auto' }} /> 
+          <StickyScroller style={{ overflow: 'hidden', height: 'auto' }} />
         </div>
-        
-        <div id="page4" className="relative" style={{ width: "100%"}}>
-        <h1 className="text-white text-8xl text-left pl-[70px] font-bold mb-[4vw]">Four Steller Colours</h1>
-          <Tabs/>
+        <div id="page4" className="relative" style={{ width: "100%" }} >
+          <h1 className="text-white text-8xl text-left pl-[70px] font-bold mb-[4vw]">Four Steller Colours</h1>
+          <Tabs />
+        </div>
+        <div id="page5" className="relative" style={{ width: "100%" }}>
+          <div className="flex-container">
+            <div className="left-container">
+              <Macvid />
+            </div>
+            <div className="right-container">
+              <div className="ipad">
+                <Ipadvid />
+              </div>
+
+              <div className="watch">
+                <Watchvid />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </>
@@ -115,7 +132,7 @@ function Navbar({ className }: { className?: string }) {
         </MenuItem>
         <MenuItem setActive={setActive} active={active} item="iPad">
           <div className="text-sm grid grid-cols-2 gap-10 p-4">
-          <ProductItem
+            <ProductItem
               title="iPad Pro"
               href="https://algochurn.com"
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5i_PoTFlSU1S0nmRn_trNQ_cEpGRKCmy1LA&s"
@@ -365,6 +382,6 @@ function Navbar({ className }: { className?: string }) {
         <Button />
 
       </Menu>
-    </div>
-  );
+    </div>
+  );
 }
