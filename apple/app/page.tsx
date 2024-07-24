@@ -1,19 +1,14 @@
 "use client";
 import React, { useState } from "react";
-import {
-  HoveredLink,
-  Menu,
-  MenuItem,
-  ProductItem,
-} from "@/components/ui/navbar-menu";
+import { HoveredLink, Menu, MenuItem, ProductItem } from "@/components/ui/navbar-menu";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-import Logo from "@/app/logo4.png";
+import Logo from "@/app/logo4.png"
 import Button from "@/components/button";
-import VideoPlayer from "@/components/VideoPlayer";
+import VideoPlayer from '@/components/VideoPlayer';
 import FlipWord from "@/components/FlipWord";
-import Scroll from "@/components/scroll";
-import Cscroll from "@/components/cardscroll";
+import Scroll from '@/components/scroll';
+import Cscroll from '@/components/cardscroll';
 import StickyScroller from "@/components/StickyScroller";
 import Tabs from "@/components/tab";
 import Ipadvid from "@/components/ipadvid";
@@ -21,36 +16,46 @@ import Macvid from "@/components/macvid";
 import Watchvid from "@/components/watchvid";
 import Card from "@/components/ThreedCard";
 import Zoom from "@/components/Zoom";
+import Apple from '@/components/apple';
+import Google from '@/components/scrolling';
+import Lamp from '@/components/Lamp';
 export default function Home() {
   return (
     <>
       <div id="div">
         <div className="relative w-full flex items-center justify-center">
           <Navbar className="top-0" />
+
         </div>
       </div>
       <div id="main">
-        <div id="page1" style={{ width: "100%", position: "relative" }}>
-          <VideoPlayer />
-          <div
+        {/* <div id="page1" style={{ width: "100%", position: "relative" }}>
+          <VideoPlayer /> */}
+          {/* <div
             className="text"
             style={{ position: "absolute", top: "25%", left: "5%" }}
-          >
+          > */}
+        {/* <div id="page1" style={{ width: "100%", height: "100%", objectFit: "contain" }} > */}
+          {/* <div id="vidplay">
+            <VideoPlayer />
+          </div> */}
+          
+          {/* <div className="box " style={{position: "absolute",borderRadius: "40px", zIndex: "0", top: "1%", left: "3%",width: "64vw", height: "61vh" , backgroundColor : "black" ,filter: "blur(10px)" ,opacity:"0.6" }}>
+            
+          </div> */}
+          {/* <div className="text" style={{ position: "absolute", top: "25%", left: "5%" }}>
             <FlipWord />
-          </div>
+          </div> */}
+        {/* </div> */}
+        <Lamp/>
+        <Google/>
+        <div id="page6">
+          <Apple />
         </div>
-        <div id="page3" className="relative" style={{ width: "100%" }}>
-          <Cscroll />
-        </div>
-        <div
-          id="page2"
-          className="relative pt-[3vw]"
-          style={{ width: "100%", marginTop: "4vw" }}
-        >
-          <h1 className="text-white text-8xl text-left pl-[70px] font-bold">
-            New to Mac?
-          </h1>
-          <StickyScroller style={{ overflow: "hidden", height: "auto" }} />
+        <div id="page2" className="relative " style={{ width: "100%", marginTop: "4vw" }} >
+
+          <h1 className="text-white text-8xl text-left pl-[70px] font-bold">New to Mac?</h1>
+          <StickyScroller style={{ overflow: 'hidden', height: 'auto' }} />
         </div>
         <div id="page5" className="relative" style={{ width: "100%" }}>
         <h1 className="text-white text-8xl text-left pl-[50px] font-bold">
@@ -76,7 +81,7 @@ export default function Home() {
           </div>
         </div>
         <div
-          id="page6"
+          id="page7"
           className="relative"
           style={{ width: "100%", marginTop: "6vw" }}
         >
@@ -104,13 +109,22 @@ export default function Home() {
             <Card src="https://www.apple.com/in/iphone-15-pro/images/overview/closer-look/white_titanium__b3fwwp6zrrhy_large.jpg" />
           </div>
         </div>
-        <div className="page7">
+        <div className="page8">
         <h1 className="text-white text-8xl text-left pl-[50px] font-bold mb-[4vw]">
         Designed to <br/>
         make a difference.
             </h1>
         <Zoom/>
         </div>
+        <div id="page3" className="relative" style={{ width: "100%" }} >
+          <Cscroll />
+        </div>
+        <div id="page4" className="relative" style={{ width: "100%" }} >
+          <h1 className="text-white text-8xl text-left pl-[70px] font-bold mb-[4vw]">Four Steller Colours</h1>
+          <Tabs />
+        </div>
+
+
       </div>
     </>
   );
@@ -119,15 +133,11 @@ export default function Home() {
 function Navbar({ className }: { className?: string }) {
   const [active, setActive] = useState<string | null>(null);
   return (
-    <div className={cn("fixed inset-x-0 max-w-100% mx-auto z-50", className)}>
+    <div
+      className={cn("fixed inset-x-0 max-w-100% mx-auto z-50", className)}
+    >
       <Menu setActive={setActive}>
-        <Image
-          src={Logo}
-          alt=""
-          width={30}
-          height={30}
-          className="z-50 position: absolute  top-6 left-6 "
-        />
+        <Image src={Logo} alt="" width={30} height={30} className="z-50 position: absolute  top-6 left-6 " />
         <MenuItem setActive={setActive} active={active} item="Store">
           <div className="flex flex-col space-y-4 text-sm">
             <HoveredLink href="/web-dev">Delhi</HoveredLink>
@@ -174,6 +184,7 @@ function Navbar({ className }: { className?: string }) {
               href="https://gomoonbeam.com"
               src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/mac-pro-tower-hero-splitter-2023?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1684181485853"
               description="Never write from scratch again. Go from idea to blog in minutes."
+
             />
             <ProductItem
               title="Displays"
@@ -220,6 +231,7 @@ function Navbar({ className }: { className?: string }) {
               href="https://gomoonbeam.com"
               src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MMMR3?wid=1200&hei=630&fmt=jpeg&qlt=95&.v=1645719947833"
               description="Never write from scratch again. Go from idea to blog in minutes."
+
             />
           </div>
         </MenuItem>
@@ -432,6 +444,7 @@ function Navbar({ className }: { className?: string }) {
         </MenuItem>
 
         <Button />
+
       </Menu>
     </div>
   );
