@@ -16,6 +16,7 @@ import Macvid from '@/components/Macvid';
 import Watchvid from '@/components/Watchvid';
 import Apple from '@/components/apple';
 import Google from '@/components/scrolling';
+import Lamp from '@/components/Lamp';
 export default function Home() {
   return (
     <>
@@ -38,6 +39,7 @@ export default function Home() {
             <FlipWord />
           </div> */}
         </div>
+        <Lamp/>
         <Google/>
         <div id="page6">
           <Apple />
