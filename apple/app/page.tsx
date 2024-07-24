@@ -20,6 +20,7 @@ import Ipadvid from "@/components/ipadvid";
 import Macvid from "@/components/macvid";
 import Watchvid from "@/components/watchvid";
 import Card from "@/components/ThreedCard";
+import Zoom from "@/components/Zoom";
 export default function Home() {
   return (
     <>
@@ -31,9 +32,6 @@ export default function Home() {
       <div id="main">
         <div id="page1" style={{ width: "100%", position: "relative" }}>
           <VideoPlayer />
-          {/* <div className="box " style={{position: "absolute",borderRadius: "40px", zIndex: "0", top: "15%", left: "3%",width: "58vw", height: "70vh" , backgroundColor : "black" ,filter: "blur(10px)" ,opacity:"0.6" }}>
-            
-          </div> */}
           <div
             className="text"
             style={{ position: "absolute", top: "25%", left: "5%" }}
@@ -54,13 +52,11 @@ export default function Home() {
           </h1>
           <StickyScroller style={{ overflow: "hidden", height: "auto" }} />
         </div>
-        {/* <div id="page4" className="relative" style={{ width: "100%" }}>
-          <h1 className="text-white text-8xl text-left pl-[70px] font-bold mb-[4vw]">
-            Four Steller Colours
-          </h1>
-          <Tabs />
-        </div> */}
         <div id="page5" className="relative" style={{ width: "100%" }}>
+        <h1 className="text-white text-8xl text-left pl-[50px] font-bold">
+        Explore the line-up.
+            </h1>
+            <div className="dabba">
           <div className="flex-container">
             <div className="left-container">
               <div className="Macvid">
@@ -76,6 +72,7 @@ export default function Home() {
                 <Watchvid />
               </div>
             </div>
+          </div>
           </div>
         </div>
         <div
@@ -103,9 +100,16 @@ export default function Home() {
               <br />
               Swap it over.
             </h1>
-            <Card src="https://www.apple.com/in/iphone-15-pro/images/overview/closer-look/blue_titanium__wsqgpa9i1822_large.jpg" />
+            <Card src="https://www.apple.com/in/iphone-15-pro/images/overview/closer-look/white_titanium__b3fwwp6zrrhy_large.jpg" />
             <Card src="https://www.apple.com/in/iphone-15-pro/images/overview/closer-look/white_titanium__b3fwwp6zrrhy_large.jpg" />
           </div>
+        </div>
+        <div className="page7">
+        <h1 className="text-white text-8xl text-left pl-[50px] font-bold mb-[4vw]">
+        Designed to <br/>
+        make a difference.
+            </h1>
+        <Zoom/>
         </div>
       </div>
     </>
