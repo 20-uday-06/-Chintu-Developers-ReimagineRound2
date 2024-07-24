@@ -11,9 +11,10 @@ import Scroll from '@/components/scroll';
 import Cscroll from '@/components/cardscroll';
 import StickyScroller from "@/components/StickyScroller";
 import Tabs from '@/components/tab';
-import Ipadvid from '@/components/ipadvid';
-import Macvid from '@/components/macvid';
-import Watchvid from '@/components/watchvid';
+import Ipadvid from '@/components/Ipadvid';
+import Macvid from '@/components/Macvid';
+import Watchvid from '@/components/Watchvid';
+import Apple from '@/components/apple';
 export default function Home() {
   return (
     <>
@@ -24,9 +25,9 @@ export default function Home() {
         </div>
       </div>
       <div id="main">
-        <div id="page1" style={{ width: "100%" , height: "100%" , objectFit: "contain"}} >
+        <div id="page1" style={{ width: "100%", height: "100%", objectFit: "contain" }} >
           <div id="vidplay">
-          <VideoPlayer />
+            <VideoPlayer />
           </div>
           {/* <div className="box " style={{position: "absolute",borderRadius: "40px", zIndex: "0", top: "1%", left: "3%",width: "64vw", height: "61vh" , backgroundColor : "black" ,filter: "blur(10px)" ,opacity:"0.6" }}>
             
@@ -35,23 +36,19 @@ export default function Home() {
             <FlipWord />
           </div>
         </div>
-        <div id="page3" className="relative" style={{ width: "100%" }} >
-          <Cscroll />
+        <div id="page6">
+          <Apple />
         </div>
-        <div id="page2" className="relative pt-[3vw]" style={{ width: "100%", marginTop: "4vw" }} >
+        <div id="page2" className="relative " style={{ width: "100%", marginTop: "4vw" }} >
 
           <h1 className="text-white text-8xl text-left pl-[70px] font-bold">New to Mac?</h1>
           <StickyScroller style={{ overflow: 'hidden', height: 'auto' }} />
-        </div>
-        <div id="page4" className="relative" style={{ width: "100%" }} >
-          <h1 className="text-white text-8xl text-left pl-[70px] font-bold mb-[4vw]">Four Steller Colours</h1>
-          <Tabs />
         </div>
         <div id="page5" className="relative" style={{ width: "100%" }}>
           <div className="flex-container">
             <div className="left-container">
               <div className="Macvid">
-              <Macvid />
+                <Macvid />
               </div>
             </div>
             <div className="right-container">
@@ -65,6 +62,15 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <div id="page3" className="relative" style={{ width: "100%" }} >
+          <Cscroll />
+        </div>
+        <div id="page4" className="relative" style={{ width: "100%" }} >
+          <h1 className="text-white text-8xl text-left pl-[70px] font-bold mb-[4vw]">Four Steller Colours</h1>
+          <Tabs />
+        </div>
+
+
       </div>
     </>
   );
