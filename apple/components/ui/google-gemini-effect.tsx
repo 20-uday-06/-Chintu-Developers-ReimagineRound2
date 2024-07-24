@@ -2,10 +2,11 @@
 import { cn } from "@/lib/utils";
 import { motion, MotionValue } from "framer-motion";
 import React from "react";
+import FlipWord from "@/components/FlipWord";
 
 const transition = {
   duration: 0,
-  ease: "linear",
+  ease: "quadratic",
 };
 
 export const GoogleGeminiEffect = ({
@@ -20,23 +21,24 @@ export const GoogleGeminiEffect = ({
   className?: string;
 }) => {
   return (
-    <div className={cn("sticky top-80", className)}>
-      <p className="text-lg md:text-7xl font-normal pb-4 text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-100 to-neutral-300">
-        {title || `Welcome to Apple`}
+    <div className={cn("sticky top-60", className)}>
+      <p className="text-lg md:text-8xl font-normal pb-4 text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-100 to-neutral-300">
+        <FlipWord/>
       </p>
-      <p className="text-xs md:text-xl font-normal text-center text-neutral-400 mt-4 max-w-lg mx-auto">
+      
+      <p className="text-xs md:text-xl font-normal text-center text-stone-400 mt-4 max-w-lg mx-auto ">
         {description ||
-          `"The people who are crazy enough to think they can change the world are the ones who do." – Apple Inc.`}
+          `"The people who are crazy enough to think they can change the world are the ones who do."`}
       </p>
       <div className="w-full h-[700px] -top-60 md:-top-40  flex items-center justify-center bg-red-transparent absolute ">
         <button className="font-bold bg-white rounded-full md:px-4 md:py-2 px-2 py-1 md:mt-24 mt-8 z-30 md:text-base text-black text-xs  w-fit mx-auto ">
-          apple.com/in
+          Chintu Developers
         </button>
       </div>
       <svg
         width="40"
         height="1190"
-        viewBox="0 170 1440 1090"
+        viewBox="0 160 1440 1090"
         xmlns="http://www.w3.org/2000/svg"
         className=" absolute -top-60  md:-top-40 w-full"
       >

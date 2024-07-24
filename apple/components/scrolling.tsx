@@ -15,6 +15,7 @@ export default function GoogleGeminiEffectDemo() {
   const pathLengthThird = useTransform(scrollYProgress, [0, 0.8], [0.1, 1.2]);
   const pathLengthFourth = useTransform(scrollYProgress, [0, 0.8], [0.05, 1.2]);
   const pathLengthFifth = useTransform(scrollYProgress, [0, 0.8], [0, 1.2]);
+ 
 
   return (
     <div

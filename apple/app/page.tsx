@@ -11,9 +11,9 @@ import Scroll from '@/components/scroll';
 import Cscroll from '@/components/cardscroll';
 import StickyScroller from "@/components/StickyScroller";
 import Tabs from "@/components/tab";
-import Ipadvid from "@/components/ipadvid";
-import Macvid from "@/components/macvid";
-import Watchvid from "@/components/watchvid";
+import Ipadvid from "@/components/Ipadvid";
+import Macvid from "@/components/Macvid";
+import Watchvid from "@/components/Watchvid";
 import Card from "@/components/ThreedCard";
 import Zoom from "@/components/Zoom";
 import Apple from '@/components/apple';
@@ -31,73 +31,44 @@ export default function Home() {
       <div id="main">
         {/* <div id="page1" style={{ width: "100%", position: "relative" }}>
           <VideoPlayer /> */}
-          {/* <div
+        {/* <div
             className="text"
             style={{ position: "absolute", top: "25%", left: "5%" }}
           > */}
         {/* <div id="page1" style={{ width: "100%", height: "100%", objectFit: "contain" }} > */}
-          {/* <div id="vidplay">
+        {/* <div id="vidplay">
             <VideoPlayer />
           </div> */}
-          
-          {/* <div className="box " style={{position: "absolute",borderRadius: "40px", zIndex: "0", top: "1%", left: "3%",width: "64vw", height: "61vh" , backgroundColor : "black" ,filter: "blur(10px)" ,opacity:"0.6" }}>
+
+        {/* <div className="box " style={{position: "absolute",borderRadius: "40px", zIndex: "0", top: "1%", left: "3%",width: "64vw", height: "61vh" , backgroundColor : "black" ,filter: "blur(10px)" ,opacity:"0.6" }}>
             
           </div> */}
-          {/* <div className="text" style={{ position: "absolute", top: "25%", left: "5%" }}>
+        {/* <div className="text" style={{ position: "absolute", top: "25%", left: "5%" }}>
             <FlipWord />
           </div> */}
         {/* </div> */}
-        <Lamp/>
-        <Google/>
-        <div id="page6">
+
+        <Google />
+        <div id="page6" style={{ paddingBottom: "4vw", paddingTop: "6vw" }}>
           <Apple />
         </div>
+        <Lamp />
         <div id="page2" className="relative " style={{ width: "100%", marginTop: "4vw" }} >
 
           <h1 className="text-white text-8xl text-left pl-[70px] font-bold">New to Mac?</h1>
           <StickyScroller style={{ overflow: 'hidden', height: 'auto' }} />
         </div>
-        <div id="page5" className="relative" style={{ width: "100%" }}>
-        <h1 className="text-white text-8xl text-left pl-[50px] font-bold">
-        Explore the line-up.
-            </h1>
-            <div className="dabba">
-          <div className="flex-container">
-            <div className="left-container">
-              <div className="Macvid">
-                <Macvid />
-              </div>
-            </div>
-            <div className="right-container">
-              <div className="ipad">
-                <Ipadvid />
-              </div>
-
-              <div className="watch">
-                <Watchvid />
-              </div>
-            </div>
-          </div>
-          </div>
-        </div>
         <div
           id="page7"
           className="relative"
-          style={{ width: "100%", marginTop: "6vw" }}
+          style={{ width: "100%", marginTop: "6vw"}}
+        ><div
+          className="relative"
+          style={{ width: "100%", height: "100vh", paddingTop: "16vw", backgroundImage: 'url(https://www.apple.com/v/apple-watch-series-9/d/images/overview/fitness/fitness_hero__fqxbiwqrddaq_large.jpg)', backgroundSize: "cover", backgroundPosition: "center", marginBottom: "4vw", backgroundRepeat: "no-repeat", display: "flex", flexDirection: "column", gap: "" }}
         >
-          <h1 className="text-white text-8xl text-left pl-[70px] font-bold mb-[7vw]">
-            Take a closer look
-          </h1>
-          <div
-            className="image"
-            style={{ display: "flex", justifyContent: "center" }}
-          >
-            <Image
-              src="https://www.apple.com/in/iphone-15-pro/images/overview/closer-look/all_colors__eppfcocn9mky_large.jpg"
-              height="400"
-              width="600"
-              alt="Apple"
-            />
+            <h1 className="text-white text-8xl text-left pl-[70px] font-bold mb-[7vw]">
+              Take a <br />closer look
+            </h1>
           </div>
           <div className="box" style={{ display: "flex", gap: "30px", alignItems: "center", marginTop: "7vw", padding: "0 4vw" }}>
             <h1 className="text-white text-8xl text-left pl-[50px] font-bold">
@@ -105,17 +76,34 @@ export default function Home() {
               <br />
               Swap it over.
             </h1>
-            <Card src="https://www.apple.com/in/iphone-15-pro/images/overview/closer-look/white_titanium__b3fwwp6zrrhy_large.jpg" />
+            <Card src="https://www.apple.com/in/iphone-15-pro/images/overview/closer-look/natural_titanium__ccl12n7vwwxe_large.jpg" />
             <Card src="https://www.apple.com/in/iphone-15-pro/images/overview/closer-look/white_titanium__b3fwwp6zrrhy_large.jpg" />
           </div>
         </div>
-        <div className="page8">
-        <h1 className="text-white text-8xl text-left pl-[50px] font-bold mb-[4vw]">
-        Designed to <br/>
-        make a difference.
-            </h1>
-        <Zoom/>
+        <div id="page5" className="relative" style={{ width: "100%" }}>
+          <h1 className="text-white text-8xl text-left pl-[50px] font-bold">
+            Explore the line-up.
+          </h1>
+          <div className="dabba">
+            <div className="flex-container">
+              <div className="left-container">
+                <div className="Macvid">
+                  <Macvid />
+                </div>
+              </div>
+              <div className="right-container">
+                <div className="ipad">
+                  <Ipadvid />
+                </div>
+
+                <div className="watch">
+                  <Watchvid />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+
         <div id="page3" className="relative" style={{ width: "100%" }} >
           <Cscroll />
         </div>
@@ -123,7 +111,13 @@ export default function Home() {
           <h1 className="text-white text-8xl text-left pl-[70px] font-bold mb-[4vw]">Four Steller Colours</h1>
           <Tabs />
         </div>
-
+        <div className="page8">
+          <h1 className="text-white text-8xl text-left pl-[50px] font-bold mb-[4vw]">
+            Designed to <br />
+            make a difference.
+          </h1>
+          <Zoom />
+        </div>
 
       </div>
     </>
