@@ -15,6 +15,7 @@ import Ipadvid from '@/components/Ipadvid';
 import Macvid from '@/components/Macvid';
 import Watchvid from '@/components/Watchvid';
 import Apple from '@/components/apple';
+import Google from '@/components/scrolling';
 export default function Home() {
   return (
     <>
@@ -26,16 +27,18 @@ export default function Home() {
       </div>
       <div id="main">
         <div id="page1" style={{ width: "100%", height: "100%", objectFit: "contain" }} >
-          <div id="vidplay">
+          {/* <div id="vidplay">
             <VideoPlayer />
-          </div>
+          </div> */}
+          
           {/* <div className="box " style={{position: "absolute",borderRadius: "40px", zIndex: "0", top: "1%", left: "3%",width: "64vw", height: "61vh" , backgroundColor : "black" ,filter: "blur(10px)" ,opacity:"0.6" }}>
             
           </div> */}
-          <div className="text" style={{ position: "absolute", top: "25%", left: "5%" }}>
+          {/* <div className="text" style={{ position: "absolute", top: "25%", left: "5%" }}>
             <FlipWord />
-          </div>
+          </div> */}
         </div>
+        <Google/>
         <div id="page6">
           <Apple />
         </div>
