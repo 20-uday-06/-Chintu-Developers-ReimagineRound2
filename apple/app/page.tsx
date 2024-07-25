@@ -71,7 +71,7 @@ export default function Home() {
         <div id="page2" className="relative " style={{ width: "100%", marginTop: "4vw" }} >
 
           <h1 className="text-white text-8xl text-left pl-[70px] font-bold">New to Mac?</h1>
-          <StickyScroller style={{ overflow: 'hidden', height: 'auto' }} />
+          <StickyScroller/>
         </div>
         <div
           id="page7"
