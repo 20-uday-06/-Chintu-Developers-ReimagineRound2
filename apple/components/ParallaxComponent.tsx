@@ -1,5 +1,3 @@
-"use client";
-// components/ParallaxSections.js
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -11,22 +9,25 @@ const ParallaxSections = () => {
 
   useEffect(() => {
     sectionsRef.current.forEach((section, index) => {
-      const img = section.querySelector("img");
-
-      gsap.fromTo(
-        img,
-        { scale: 1 },
-        {
-          scale: 3,
-          scrollTrigger: {
-            trigger: section,
-            start: "top bottom",
-            end: "top top",
-            scrub: true,
-            markers: false,
-          },
+      if (section) {
+        const img = section.querySelector("img");
+        if (img) {
+          gsap.fromTo(
+            img,
+            { scale: 1 },
+            {
+              scale: 3,
+              scrollTrigger: {
+                trigger: section,
+                start: "top bottom",
+                end: "top top",
+                scrub: true,
+                markers: false,
+              },
+            }
+          );
         }
-      );
+      }
     });
   }, []);
 
@@ -63,7 +64,11 @@ const ParallaxSections = () => {
       {sections.map((section, index) => (
         <div
           key={index}
-          ref={(el) => (sectionsRef.current[index] = el)}
+          ref={(el: HTMLDivElement | null) => {
+            if (el) {
+              sectionsRef.current[index] = el;
+            }
+          }}
           style={{
             position: "relative",
             height: "100vh",
