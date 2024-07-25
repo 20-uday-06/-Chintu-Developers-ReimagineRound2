@@ -56,7 +56,9 @@ export default function Home() {
           <Apple />
         </div>
         {/* <Gradient/> */}
+        <div id="page" className="relative " style={{ width: "100%",height:"40%" }}>
         <Lamp />
+        </div>
         <Glove/>
         <div id="page2" className="relative " style={{ width: "100%", marginTop: "4vw" }} >
 
