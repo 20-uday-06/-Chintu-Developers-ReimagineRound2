@@ -10,7 +10,6 @@ import FlipWord from "@/components/FlipWord";
 import Scroll from '@/components/scroll';
 import Cscroll from '@/components/cardscroll';
 import StickyScroller from "@/components/StickyScroller";
-import Tabs from "@/components/tab";
 import Ipadvid from "@/components/Ipadvid";
 import Macvid from "@/components/Macvid";
 import Watchvid from "@/components/Watchvid";
@@ -135,10 +134,10 @@ export default function Home() {
 <div className="page9" style={{padding: "0 4vw"}}>
           <VideoScroll />
         </div>
-        <div id="page4" className="relative" style={{ width: "100%" }} >
+        {/* <div id="page4" className="relative" style={{ width: "100%" }} >
           <h1 className="text-white text-8xl text-left pl-[70px] font-bold mb-[4vw]">Four Steller Colours</h1>
           <Tabs />
-        </div>
+        </div> */}
 
         <div id="footer">
         
