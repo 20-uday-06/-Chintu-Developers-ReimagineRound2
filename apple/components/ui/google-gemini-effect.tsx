@@ -3,6 +3,7 @@ import { cn } from "@/lib/utils";
 import { motion, MotionValue } from "framer-motion";
 import React from "react";
 import FlipWord from "@/components/FlipWord";
+// import Preview from "@/components/preview";
 
 const transition = {
   duration: 0,
@@ -22,9 +23,10 @@ export const GoogleGeminiEffect = ({
 }) => {
   return (
     <div className={cn("sticky top-60", className)}>
-      <p className="text-lg md:text-8xl font-normal pb-4 text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-100 to-neutral-300">
+      <div className="text-lg md:text-8xl font-normal pb-4 text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-100 to-neutral-300">
         <FlipWord/>
-      </p>
+      </div>
+        {/* <Preview/> */}
       
       <p className="text-xs md:text-xl font-normal text-center text-stone-400 mt-4 max-w-lg mx-auto ">
         {description ||

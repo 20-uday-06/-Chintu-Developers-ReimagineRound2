@@ -1,5 +1,5 @@
-// next.config.js
-module.exports = {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   reactStrictMode: true,
   images: {
     domains: [
@@ -12,7 +12,6 @@ module.exports = {
       "www.apple.com",
       "images-cdn.ubuy.co.in",
       "i.gadgets360cdn.com",
-      "encrypted-tbn0.gstatic.com",
       "cdsassets.apple.com",
       "m.media-amazon.com",
       "telecomtalk.info",
@@ -26,6 +25,20 @@ module.exports = {
       "images.macrumors.com",
       "9to5mac.com",
       "static5.depositphotos.com",
+      "api.microlink.io", // Microlink Image Preview
+      'bsmedia.business-standard.com',
+      'media.idownloadblog.com',
+      'encrypted-tbn0.gstatic.com',
+      '9to5mac.com',
+      'plus.unsplash.com',
+      'images.unsplash.com',
+      'www.shutterstock.com',
+      'hips.hearstapps.com',
+      
+
+
     ],
   },
 };
+
+module.exports = nextConfig;

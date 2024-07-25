@@ -11,7 +11,7 @@ const content = [
     content: (
       <div className="h-full w-full  flex items-center justify-center text-white">
         <Image
-          src="https://9to5mac.com/wp-content/uploads/sites/6/2023/01/macbook-pro-wallpaper.jpg?quality=82&strip=all"
+          src="https://bsmedia.business-standard.com/_media/bs/img/article/2023-10/31/full/1698730958-5524.jpg"
           width={300}
           height={300}
           className="h-full w-full object-cover"
@@ -43,7 +43,7 @@ const content = [
     content: (
       <div className="h-full w-full  flex items-center justify-center text-white">
         <Image
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfW8NMQRzVw0p06E4qTt6V-LT9orK2MWF4TA&s"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjuYK3Hkdk3M3GXrIc1cpX5aqxH9CucGcT6g&s"
           width={300}
           height={300}
           className="h-full w-full object-cover"
@@ -59,7 +59,7 @@ const content = [
     content: (
       <div className="h-full w-full  flex items-center justify-center text-white">
         <Image
-          src="https://static5.depositphotos.com/1054619/514/i/450/depositphotos_5141267-stock-photo-battery.jpg"
+          src="https://9to5mac.com/wp-content/uploads/sites/6/2023/10/m3-macbook-pro-battery-life.webp?w=1600"
           width={300}
           height={300}
           className="h-full w-full object-cover"

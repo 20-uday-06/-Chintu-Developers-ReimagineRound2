@@ -5,12 +5,11 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Logo from "@/app/logo4.png"
 import Button from "@/components/button";
-import VideoPlayer from '@/components/VideoPlayer';
+// import VideoPlayer from '@/components/VideoPlayer';
 import FlipWord from "@/components/FlipWord";
 import Scroll from '@/components/scroll';
 import Cscroll from '@/components/cardscroll';
 import StickyScroller from "@/components/StickyScroller";
-import Tabs from "@/components/tab";
 import Ipadvid from "@/components/Ipadvid";
 import Macvid from "@/components/Macvid";
 import Watchvid from "@/components/Watchvid";
@@ -21,6 +20,12 @@ import Google from '@/components/scrolling';
 import Lamp from '@/components/Lamp';
 
 import ParallaxSections from '../components/ParallaxComponent';
+import Preview from '@/components/preview';
+import Gradient from '@/components/grad';
+import Glove from '@/components/globe';
+import VideoScroll from '@/components/VideoScroll';
+import Reviews from '@/components/review';
+import Anireviews from '@/components/anireview';
 export default function Home() {
   return (
     <>
@@ -54,7 +59,16 @@ export default function Home() {
         <div id="page6" style={{ paddingBottom: "4vw", paddingTop: "6vw" }}>
           <Apple />
         </div>
-        
+        {/* <Gradient/> */}
+        <div id="page" className="relative " style={{ width: "100%",height:"40%" }}>
+        <Lamp />
+        </div>
+        <Glove/>
+        <div id="reviews">
+          <p>REVIEWS</p>
+          <Reviews/>
+          <Anireviews/>
+        </div>
       <div>
       <h1 className="text-white text-8xl text-left pl-[70px] font-bold mb-[7vw]">
       Take a closer look at <br />
@@ -65,7 +79,7 @@ export default function Home() {
         <div id="page2" className="relative " style={{ width: "100%", marginTop: "4vw" }} >
 
           <h1 className="text-white text-8xl text-left pl-[70px] font-bold">New to Mac?</h1>
-          <StickyScroller style={{ overflow: 'hidden', height: 'auto' }} />
+          <StickyScroller/>
         </div>
         <div
           id="page7"
@@ -116,10 +130,9 @@ export default function Home() {
         <div id="page3" className="relative" style={{ width: "100%" }} >
           <Cscroll />
         </div>
-        <div id="page4" className="relative" style={{ width: "100%" }} >
-          <h1 className="text-white text-8xl text-left pl-[70px] font-bold mb-[4vw]">Four Steller Colours</h1>
-          <Tabs />
-        </div>
+        
+        
+        
       
         <div className="page8">
           <h1 className="text-white text-8xl text-left pl-[50px] font-bold mb-[4vw]">
@@ -128,8 +141,17 @@ export default function Home() {
           </h1>
           <Zoom />
         </div>
+<div className="page9" style={{padding: "0 4vw"}}>
+          <VideoScroll />
+        </div>
+        {/* <div id="page4" className="relative" style={{ width: "100%" }} >
+          <h1 className="text-white text-8xl text-left pl-[70px] font-bold mb-[4vw]">Four Steller Colours</h1>
+          <Tabs />
+        </div> */}
+
         <div id="footer">
-        <Lamp />
+        
+        
         </div>
 
       </div>
