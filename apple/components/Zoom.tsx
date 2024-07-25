@@ -27,6 +27,7 @@ function Zoom() {
         start: "top top",
         endTrigger: ".last",
         end: "bottom bottom",
+        scrub:2,
       });
       gsap
         .timeline({
