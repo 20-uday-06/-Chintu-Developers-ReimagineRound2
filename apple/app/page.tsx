@@ -19,6 +19,8 @@ import Zoom from "@/components/Zoom";
 import Apple from '@/components/apple';
 import Google from '@/components/scrolling';
 import Lamp from '@/components/Lamp';
+
+import ParallaxSections from '../components/ParallaxComponent';
 export default function Home() {
   return (
     <>
@@ -53,6 +55,13 @@ export default function Home() {
           <Apple />
         </div>
         
+      <div>
+      <h1 className="text-white text-8xl text-left pl-[70px] font-bold mb-[7vw]">
+      Take a closer look at <br />
+      our latest models.
+      </h1>
+      <ParallaxSections />
+      </div>
         <div id="page2" className="relative " style={{ width: "100%", marginTop: "4vw" }} >
 
           <h1 className="text-white text-8xl text-left pl-[70px] font-bold">New to Mac?</h1>
@@ -111,6 +120,7 @@ export default function Home() {
           <h1 className="text-white text-8xl text-left pl-[70px] font-bold mb-[4vw]">Four Steller Colours</h1>
           <Tabs />
         </div>
+      
         <div className="page8">
           <h1 className="text-white text-8xl text-left pl-[50px] font-bold mb-[4vw]">
             Designed to <br />
