@@ -2,6 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { LampContainer } from "@/components/ui/lamp";
+import Preview from '@/components/preview';
 
 export default function LampDemo() {
   return (
@@ -16,7 +17,7 @@ export default function LampDemo() {
         }}
         className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
       >
-        Heloooo <br /> Bachooooooo
+      <Preview/>
       </motion.h1>
     </LampContainer>
   );

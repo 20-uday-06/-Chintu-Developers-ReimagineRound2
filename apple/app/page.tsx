@@ -19,6 +19,9 @@ import Zoom from "@/components/Zoom";
 import Apple from '@/components/apple';
 import Google from '@/components/scrolling';
 import Lamp from '@/components/Lamp';
+import Preview from '@/components/preview';
+import Gradient from '@/components/grad';
+import Glove from '@/components/globe';
 export default function Home() {
   return (
     <>
@@ -52,7 +55,9 @@ export default function Home() {
         <div id="page6" style={{ paddingBottom: "4vw", paddingTop: "6vw" }}>
           <Apple />
         </div>
-        
+        {/* <Gradient/> */}
+        <Lamp />
+        <Glove/>
         <div id="page2" className="relative " style={{ width: "100%", marginTop: "4vw" }} >
 
           <h1 className="text-white text-8xl text-left pl-[70px] font-bold">New to Mac?</h1>
@@ -119,7 +124,8 @@ export default function Home() {
           <Zoom />
         </div>
         <div id="footer">
-        <Lamp />
+        
+        
         </div>
 
       </div>
