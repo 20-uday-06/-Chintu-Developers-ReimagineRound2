@@ -26,6 +26,10 @@ const nextConfig = {
       "9to5mac.com",
       "static5.depositphotos.com",
       "api.microlink.io", // Microlink Image Preview
+      'bsmedia.business-standard.com',
+      'media.idownloadblog.com',
+      'encrypted-tbn0.gstatic.com',
+      '9to5mac.com',
     ],
   },
 };
