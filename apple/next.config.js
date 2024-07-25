@@ -30,6 +30,13 @@ const nextConfig = {
       'media.idownloadblog.com',
       'encrypted-tbn0.gstatic.com',
       '9to5mac.com',
+      'plus.unsplash.com',
+      'images.unsplash.com',
+      'www.shutterstock.com',
+      'hips.hearstapps.com',
+      
+
+
     ],
   },
 };

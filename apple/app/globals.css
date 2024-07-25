@@ -152,3 +152,43 @@ body::-webkit-scrollbar-thumb {
     perspective: 2200px;
   }
 }
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-snap-type: x mandatory;
+}
+
+.video-section, .text-section {
+  flex: 1;
+  scroll-snap-align: start;
+}
+
+.video {
+  height: 100vh;
+  width: 100%;
+  background: #000;
+  position: relative;
+  transition: transform 0.5s;
+}
+
+.text {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: #f0f0f0; */
+  font-size: 24px;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: transform 0.5s;
+}
+

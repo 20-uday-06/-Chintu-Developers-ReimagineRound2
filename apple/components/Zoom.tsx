@@ -7,6 +7,7 @@ import img3 from "../public/Image/color/Space grey.png";
 import img4 from "../public/Image/color/starlight.png";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import VideoScroll from '@/components/VideoScroll';
 gsap.registerPlugin(ScrollTrigger);
 
 function Zoom() {
@@ -27,7 +28,6 @@ function Zoom() {
         endTrigger: ".last",
         end: "bottom bottom",
       });
-      gsap.set(container.current, {marginTop: -(container.current.offsetHeight)});
       gsap
         .timeline({
           scrollTrigger: {
@@ -38,8 +38,8 @@ function Zoom() {
           },
         })
         .to(img.current, { transform: "translateZ(2200px)" }, 0)
-        .to(text1.current, { y: -800 }, "<")
-        .to(text2.current, { y: -800 }, "<")
+        .to(text1.current, { y: -800, display: "none" }, "<")
+        .to(text2.current, { y: -800, display: "none" }, "<")
         .fromTo(container.current, {yPercent:100, scaleY: 2}, {yPercent: 0, scaleY: 1})
      
     });
@@ -69,36 +69,13 @@ function Zoom() {
                 ref={text2}
                 className="opacity-70 w-62 text-[25px] text-center text-white"
               >
-                A showcase of the world's best Photography.
+                A showcase of the world's best products.
               </p>
             </div>
           </div>
-          <div ref={container} className="container py-12 flex flex-wrap items-center justify-center gap-[80px]">
-            <div className="col-1 flex flex-col gap-16 translate-y-[30%] pb-8">
-              <img
-                className="w-[450px] h-[350px]"
-                src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt=""
-              />
-              <img
-                className="w-[400px] h-[400px]"
-                src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt=""
-              />
-            </div>
-            <div className="col-2 flex flex-col gap-16">
-              <img
-                src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                className="w-[600px] h-[400px]"
-                alt=""
-              />
-              <img
-                src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                className="w-[400px] h-[400px]"
-                alt=""
-              />
-            </div>
-          </div>
+          {/* <div ref={container} className="container" style={{padding: "0 4vw 4vw 4vw"}}>
+          <VideoScroll />
+          </div> */}
         </section>
       </div>
     </div>
