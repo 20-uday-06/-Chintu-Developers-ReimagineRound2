@@ -26,6 +26,8 @@ import VideoScroll from '@/components/VideoScroll';
 import Reviews from '@/components/review';
 import Anireviews from '@/components/anireview';
 import Footer from '@/components/Footer';
+import Fuuter from '@/components/ffuter';
+
 export default function Home() {
   return (
     <>
@@ -139,10 +141,11 @@ export default function Home() {
           <Reviews />
           <Anireviews />
         </div>
-        <div id="page" className="relative " style={{ width: "100%", height: "40%" }}>
+        <div id="page" className="relative " style={{ width: "100%", height: "10%" }}>
           <Lamp />
         </div>
-        <Footer />
+        {/* <Footer /> */}
+        <Fuuter/>
       </div>
     </>
   );

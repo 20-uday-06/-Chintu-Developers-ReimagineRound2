@@ -4,10 +4,10 @@ import "../app/globals.css";
 export default function Footer(){
     return (
        <>
-  <footer className="footer">
+  <footer className="footer" style={{width:"100%"}}>
     <div className="container1">
       <div className="footer-columns">
-        <div className="footer-column">
+        <div className="footer-column" >
           <h3>About Apple</h3>
           <ul>
             <li><a href="#">Our Story</a></li>

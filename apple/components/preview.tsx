@@ -6,7 +6,7 @@ import { LinkPreview } from "@/components/ui/link-preview";
 export default function LinkPreviewDemo() {
   return (
     <div className="flex justify-center items-center h-[40rem] flex-col px-4">
-      <p className="text-neutral-500 dark:text-neutral-400 text-4xl md:text-3xl max-w-3xl mx-auto mb-10">
+      <p className="text-neutral-500 dark:text-neutral-400 text-4xl md:text-4xl max-w-4xl mx-auto mb-10">
         <LinkPreview url="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch_GEO_EMEA?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=VW44dkRidm5wazhwcGxtL0cyaEJ2VTkrNXBUdUJSK1k4NE5seUtJaW80ZmcvQnUxdUdEMFZ5SXlMVXRiaERVdnNCckZqMTMrS3dIUWFPL2dFWXJDTmpDNlBJczZRQmxyM2ZhZjVKT0RIMFJtMnIvc0R1T2E0dzJMNDBHTWVISnVWUUI4TzJ6bEM4S1ZTK1ZYbjIxMUpnPT0=&traceId=1" className="font-bold">
           iPhone
         </LinkPreview>{" "}
@@ -16,7 +16,7 @@ export default function LinkPreviewDemo() {
         </LinkPreview>{" "}
         are a great way to live modern life.
       </p>
-      <p className="text-neutral-500 dark:text-neutral-400 text-5xl md:text-3xl max-w-3xl mx-auto">
+      <p className="text-neutral-500 dark:text-neutral-400 text-5xl md:text-4xl max-w-3xl mx-auto">
         Visit{" "}
         <LinkPreview
           url="https://bsmedia.business-standard.com/_media/bs/img/article/2023-04/05/full/1680675972-8396.jpg?im=FeatureCrop,size=(826,465) "
