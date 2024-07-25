@@ -49,7 +49,7 @@ function Zoom() {
 
   return (
     <div className="relative h-[100vh]">
-      <div ref={bg1} className="bg absolute h-[100%] w-[100%] z-[1]">
+      <div ref={bg1} className="bg absolute h-[100%] w-[100%]">
         <section>
           <div
             ref={img_container}

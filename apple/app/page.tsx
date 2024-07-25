@@ -18,7 +18,6 @@ import Zoom from "@/components/Zoom";
 import Apple from '@/components/apple';
 import Google from '@/components/scrolling';
 import Lamp from '@/components/Lamp';
-
 import ParallaxSections from '../components/ParallaxComponent';
 import Preview from '@/components/preview';
 import Gradient from '@/components/grad';
@@ -26,6 +25,7 @@ import Glove from '@/components/globe';
 import VideoScroll from '@/components/VideoScroll';
 import Reviews from '@/components/review';
 import Anireviews from '@/components/anireview';
+import Footer from '@/components/Footer';
 export default function Home() {
   return (
     <>
@@ -60,31 +60,23 @@ export default function Home() {
           <Apple />
         </div>
         {/* <Gradient/> */}
-        <div id="page" className="relative " style={{ width: "100%",height:"40%" }}>
-        <Lamp />
+
+        <div>
+          <h1 className="text-white text-8xl text-left pl-[70px] font-bold mb-[7vw]">
+            Take a closer look at <br />
+            our latest models.
+          </h1>
+          <ParallaxSections />
         </div>
-        <Glove/>
-        <div id="reviews">
-          <p>REVIEWS</p>
-          <Reviews/>
-          <Anireviews/>
-        </div>
-      <div>
-      <h1 className="text-white text-8xl text-left pl-[70px] font-bold mb-[7vw]">
-      Take a closer look at <br />
-      our latest models.
-      </h1>
-      <ParallaxSections />
-      </div>
         <div id="page2" className="relative " style={{ width: "100%", marginTop: "4vw" }} >
 
           <h1 className="text-white text-8xl text-left pl-[70px] font-bold">New to Mac?</h1>
-          <StickyScroller/>
+          <StickyScroller />
         </div>
         <div
           id="page7"
           className="relative"
-          style={{ width: "100%", marginTop: "6vw"}}
+          style={{ width: "100%", marginTop: "6vw" }}
         ><div
           className="relative"
           style={{ width: "100%", height: "100vh", paddingTop: "16vw", backgroundImage: 'url(https://www.apple.com/v/apple-watch-series-9/d/images/overview/fitness/fitness_hero__fqxbiwqrddaq_large.jpg)', backgroundSize: "cover", backgroundPosition: "center", marginBottom: "4vw", backgroundRepeat: "no-repeat", display: "flex", flexDirection: "column", gap: "" }}
@@ -126,14 +118,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-
         <div id="page3" className="relative" style={{ width: "100%" }} >
           <Cscroll />
         </div>
-        
-        
-        
-      
         <div className="page8">
           <h1 className="text-white text-8xl text-left pl-[50px] font-bold mb-[4vw]">
             Designed to <br />
@@ -141,19 +128,21 @@ export default function Home() {
           </h1>
           <Zoom />
         </div>
-<div className="page9" style={{padding: "0 4vw"}}>
+        <div className="page9" style={{ padding: "0 4vw" }}>
           <VideoScroll />
         </div>
-        {/* <div id="page4" className="relative" style={{ width: "100%" }} >
-          <h1 className="text-white text-8xl text-left pl-[70px] font-bold mb-[4vw]">Four Steller Colours</h1>
-          <Tabs />
-        </div> */}
-
-        <div id="footer">
-        
-        
+        <Glove />
+        <div id="reviews"  className="relative z-[99]">
+        <h1 className="text-white text-6xl text-left pl-[50px] font-bold mb-[6vw]">
+            REVIEWS
+          </h1>
+          <Reviews />
+          <Anireviews />
         </div>
-
+        <div id="page" className="relative " style={{ width: "100%", height: "40%" }}>
+          <Lamp />
+        </div>
+        <Footer />
       </div>
     </>
   );
